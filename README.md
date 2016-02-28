@@ -5,3 +5,16 @@
 
 
 Microbus service for angular. 100% ES6 and 100% Tested
+
+## Usage
+Import the 'microbus' module and begin using the message bus
+```
+let myApp = angular.module('myApp', ['microbus']);
+```
+
+
+## Development
+```
+npm install
+npm run tdd
+```
