@@ -1,0 +1,42 @@
+{
+  "name": "angular-microbus",
+  "version": "0.0.0",
+  "description": "Micro angular message bus",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asilluron/angular-microbus.git"
+  },
+  "keywords": [
+    "angular",
+    "micro",
+    "bus",
+    "micro-bus",
+    "microbus",
+    "message",
+    "queue",
+    "transaction"
+  ],
+  "author": "Andrew Silluron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asilluron/angular-microbus/issues"
+  },
+  "homepage": "https://github.com/asilluron/angular-microbus#readme",
+  "devDependencies": {
+    "isparta-loader": "^2.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.3",
+    "karma-jasmine": "^0.3.7",
+    "karma-junit-reporter": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.24",
+    "phantomjs-prebuilt": "^2.1.4",
+    "webpack": "^1.12.14"
+  }
+}
