@@ -12,6 +12,25 @@ Import the 'microbus' module and begin using the message bus
 let myApp = angular.module('myApp', ['microbus']);
 ```
 
+After importing the microbus module, you can use the microbus service anywhere in your app
+
+### Push to the bus
+```
+function(scope, microbus) {
+  microbus.push({some: 'data'}, {key: 'org.namespace'});
+}
+```
+
+## Consume from the bus
+```
+function(scope, microbus) {
+  var cb = data => { console.log(`new color added: ${data}!`) };
+  microbus.consume(cb, {key: colors});
+
+  // microbus.push('blue', {key: 'org.namespace'}); --> 'new color added: blue!'
+}
+```
+
 
 ## Development
 ```
