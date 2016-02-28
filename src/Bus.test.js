@@ -81,6 +81,15 @@ describe('Bus Class', () => {
       expect(spyObj.cb).toHaveBeenCalled();
     });
 
+    it('passes data transparently', () => {
+      let spyObj = {cb: () => {}};
+      spyOn(spyObj, 'cb');
+      bus.consume(spyObj.cb, {key: 'colors'});
+      bus.push('test', {key: 'colors'});
+
+      expect(spyObj.cb).toHaveBeenCalledWith('test');
+    });
+
     it('pushing to a non-existent namespace does nothing', () => {
       let spyObj = {cb: () => {}};
       spyOn(spyObj, 'cb');

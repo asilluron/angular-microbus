@@ -11,7 +11,7 @@ class Bus {
 
   push (data, opts) {
     let listenerNamespace = initListenerNamespace(this.consumers, opts.key);
-    listenerNamespace.forEach(cb => cb.call());
+    listenerNamespace.forEach(cb => cb.call(this, data)); // TODO: Allow a configurable context
   }
 }
 
