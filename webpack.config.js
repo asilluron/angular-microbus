@@ -1,6 +1,6 @@
 module.exports = {
   context: __dirname + '/src',
-  entry: './app',
+  entry: './microbus',
   output: {
     path: __dirname + '/dist',
     filename: 'angular-microbus.js'

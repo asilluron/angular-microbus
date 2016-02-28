@@ -2,7 +2,7 @@
   "name": "angular-microbus",
   "version": "0.0.0",
   "description": "Micro angular message bus",
-  "main": "index.js",
+  "main": "dist/angular-microbus.js",
   "scripts": {
     "test": "karma start --single-run --reporters junit",
     "tdd": "karma start"
