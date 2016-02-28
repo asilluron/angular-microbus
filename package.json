@@ -1,6 +1,6 @@
 {
   "name": "angular-microbus",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Micro angular message bus",
   "main": "dist/angular-microbus.js",
   "scripts": {
