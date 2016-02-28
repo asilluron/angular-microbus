@@ -26,7 +26,7 @@ var karmaConfig = {
   },
   reporters: ['dots', 'coverage'],
   coverageReporter: {
-    type: 'html',
+    type: 'lcov',
     dir: 'build/coverage/'
   },
   webpack: webpackConfig,
